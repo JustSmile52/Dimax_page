@@ -1,0 +1,33 @@
+body {
+    padding-top: 70px;
+}
+
+.carousel-item {
+    max-height: 32em;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.container{
+    position: absolute;
+}
+
+.overlay-image{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #a0ca0a;
+}
+
+a:hover {
+    color: #ca0a0a;
+}
