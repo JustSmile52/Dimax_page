@@ -21,3 +21,9 @@ body {
 a:hover {
   color: #ca0a0a;
 }
+
+section{
+  /* margin-top: 5rem; */
+  margin-bottom: 5rem;
+
+}
