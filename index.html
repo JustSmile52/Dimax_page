@@ -145,19 +145,23 @@
             <hr />
             <div class="row align-items-center ">
                 <div class="col-md-4 d-block flex-row align-items-center">
-                    <button class="btn-blank py-md-5 w-100 text-center text-lg-start"
+                    <button class="btn-blank py-md-5 w-100 text-center text-lg-start "
+                        id="sectionButton1"
+                        style="background-color:grey"
                         onclick="changeSectionPros('niezawodnie')">
                         <h5 class="display-5">Niezawodnie</h5>
                     </button>
                     <hr>
 
                     <button class="btn-blank py-md-5 w-100 text-center text-lg-start"
+                     id="sectionButton2"
                         onclick="changeSectionPros('szybko')">
                         <h5 class="display-5">Szybko</h5>
                     </button>
                     <hr>
 
                     <button class="btn-blank py-md-5  w-100 text-center text-lg-start"
+                     id="sectionButton3"
                         onclick="changeSectionPros('zajebiscie')">
                         <h5 class="display-5">Zajebiście</h5>
                     </button>
@@ -183,33 +187,33 @@
         <div class="text-center mb-5">
             <h2 class="display-2">Oferty</h2>
         </div>
-        <div class="flex-row align-items-center d-flex">
-            <div class="col-4 p-2">
+        <div class="flex-row row align-items-center justify-content-around p-2 ">
+            <div class="col-lg-3 col-md-3  p-2">
                 <div class="card">
-                    <h5 class="card-header">Kurs podstawowy B</h5>
+                    <h5 class="card-header text-center">Kurs podstawowy B</h5>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title text-sm-center">Special title treatment</h5>
+                        <p class="card-tex text-sm-centert">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-dark">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 p-2">
+            <div class="col-lg-3 col-md-3 p-2">
                 <div class="card">
-                    <h5 class="card-header">Kurs podstawowy B</h5>
+                    <h5 class="card-header  text-center">Kurs podstawowy B</h5>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title text-sm-center">Special title treatment</h5>
+                        <p class="card-text text-sm-center">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-dark">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 p-2">
+            <div class="col-lg-3 col-md-3  p-2">
                 <div class="card">
-                    <h5 class="card-header">Kurs podstawowy B</h5>
+                    <h5 class="card-header  text-center">Kurs podstawowy B</h5>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title text-sm-center">Special title treatment</h5>
+                        <p class="card-text text-sm-center">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-dark">Go somewhere</a>
                     </div>
                 </div>
@@ -228,7 +232,7 @@
     </footer>
     <div class="container fixed-bottom d-flex">
         <div class=" ms-auto py-5">
-            <button onclick="scrollToTop()" class="btn btn-outline-dark" style="border-radius: 90px;"><i
+            <button onclick="scrollToTop()" class="btn btn-outline-secondary" style="border-radius: 90px;"><i
                     class="fa-solid fa-angle-up"></i></btn>
         </div>
     </div>
@@ -243,14 +247,23 @@
                 title = "Jesteśmy niezawodni";
                 content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                 photo = "https://picsum.photos/id/0/600/400"
+                 document.getElementById('sectionButton1').style.backgroundColor = "grey"
+                  document.getElementById('sectionButton3').style.backgroundColor = "#c6c7c8"
+                   document.getElementById('sectionButton2').style.backgroundColor ="#c6c7c8"
             } else if (x == "szybko") {
                 title = "Jesteśmy szybcy i wściekli";
                 content = "Lorem Ipsum is Lorem Ipsum Madafaka simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                 photo = "https://picsum.photos/id/1/600/400"
+                  document.getElementById('sectionButton1').style.backgroundColor = "#c6c7c8"
+                  document.getElementById('sectionButton2').style.backgroundColor = "grey"
+                   document.getElementById('sectionButton3').style.backgroundColor = "#c6c7c8"
             } else {
                 title = "Nasze bloki są zajebiste";
                 content = "Mieszkam na drugim jak Onar, na winklu pali się szlugi zobacz, widok z okna na kościół, pod blokiem buja się paru gościów, mój sąsiad to pies jebał go"
                 photo = "https://picsum.photos/id/2/600/400"
+                  document.getElementById('sectionButton1').style.backgroundColor = "#c6c7c8"
+                  document.getElementById('sectionButton2').style.backgroundColor = "#c6c7c8"
+                   document.getElementById('sectionButton3').style.backgroundColor = "grey"
             }
             document.getElementById('sectionProsTitle').innerText = title
             document.getElementById('sectionProsContent').innerText = content
