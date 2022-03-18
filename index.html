@@ -72,9 +72,8 @@
     </nav>
 
     <!-- Slider -->
-    <section class="mb-0 container-fluid px-0">
-
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <section class="mb-0 container-fluid px-0 position-relative">
+        <div id="demo" class="carousel slide " data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -145,8 +144,19 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-7">
-                    <img src="https://picsum.photos/id/1006/600/400" alt="Los Angeles"
-                        class="d-block mx-auto mx-lg-0 rounded mb-5 shadow" >
+                     <div class="position-relative">
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary  translate-middle"
+                            style="top:40%; left:45%; z-index: -1; width: 80%; height: 94%;"></div>
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary  translate-middle"
+                            style="top:38%; left:53%;z-index: -1 ; width: 80%; height: 88%;"></div>
+                        <img src="https://picsum.photos/id/1006/600/400" alt="Los Angeles"
+                        class="d-block mx-auto mx-lg-0 rounded mb-5 shadow" 
+                         style="width: 80%;">
+                       
+
+                     </div>
+                    
+                       
                 </div>
                 <div class=" col-lg-4 d-block text-center text-lg-start">
                     <h2 class="display-3">O nas</h2>
@@ -158,25 +168,25 @@
         
     </section>
     <!-- Zalety -->
-    <section  class="bg-secondary p-3" >
+    <section  class="bg-secondary p-3 shadow-lg" >
         <div class="container  border border-secondary shadow" 
         style="background-color: #c6c7c8; border-radius: 15px;">
             <hr />
             <div class="row align-items-center ">
                 <div class="col-md-4 d-block flex-row align-items-center ">
-                    <button class="btn-blank py-md-5 w-100 text-center text-lg-start rounded border border-secondary" id="sectionButton1"
+                    <button class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-secondary" id="sectionButton1"
                         style="background-color:grey" onclick="changeSectionPros('niezawodnie')">
                         <h6 class="display-6 px-5 ">Niezawodnie</h6>
                     </button>
                     <hr>
 
-                    <button class="btn-blank py-md-5 w-100 text-center text-lg-start rounded  border border-secondary" id="sectionButton2"
+                    <button class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded  border border-secondary" id="sectionButton2"
                         onclick="changeSectionPros('szybko')">
                         <h6 class="display-6 px-5">Szybko</h6>
                     </button>
                     <hr>
 
-                    <button class="btn-blank py-md-5 w-100 text-center text-lg-start rounded border border-secondary" id="sectionButton3"
+                    <button class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-secondary" id="sectionButton3"
                         onclick="changeSectionPros('zajebiscie')">
                         <h6 class="display-6 px-5">Zajebiście</h6>
                     </button>
@@ -190,6 +200,7 @@
                             beens
                             the industry's standard dummy text ever since the 1500s</p>
                         <img src="https://picsum.photos/id/0/600/400" alt="Los Angeles"
+                            style="width: 80%;"
                             class="d-block mx-auto rounded mb-5" id="sectionProsPhoto">
                 </div>
             </div>
@@ -206,17 +217,12 @@
             </div>
             <div class="row align-items-center justify-content-between p-2 " data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
                 <div class="col-lg-3 col-md-4 p-2" >
-                    <div class="card text-center text-lg-start shadow">
-                        <h5 class="card-header py-3">Kurs podstawowy B</h5>
-                        <div class="card-body">
-                            <p class="card-te">With supporting text below as a natural lead-in to
-                                additional content.</p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 p-2" >
-                    <div class="card text-center text-lg-start shadow">
+                    <div class=" position-relative ">
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary w-100 h-100 translate-middle"
+                            style="top:40%; left:60%"></div>
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary w-100 h-100 translate-middle"
+                            style="top:46%; left:54%"></div>
+                        <div class="card text-center text-lg-start shadow">
                         <h5 class="card-header py-3">Kurs podstawowy B</h5>
                         <div class="card-body">
                             <p class="card-text">With supporting text below as a natural lead-in to
@@ -224,9 +230,16 @@
                             <a href="#" class="btn btn-dark">Go somewhere</a>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-3 col-md-4 p-2" >
-                    <div class="card text-center text-lg-start shadow">
+               <div class="col-lg-3 col-md-4 p-2" >
+                    <div class=" position-relative ">
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary w-100 h-100 translate-middle"
+                            style="top:40%; left:60%"></div>
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary w-100 h-100 translate-middle"
+                            style="top:46%; left:54%"></div>
+                        <div class="card text-center text-lg-start shadow">
                         <h5 class="card-header py-3">Kurs podstawowy B</h5>
                         <div class="card-body">
                             <p class="card-text">With supporting text below as a natural lead-in to
@@ -234,6 +247,25 @@
                             <a href="#" class="btn btn-dark">Go somewhere</a>
                         </div>
                     </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-md-4 p-2" >
+                    <div class=" position-relative ">
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary w-100 h-100 translate-middle"
+                            style="top:40%; left:60%"></div>
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary w-100 h-100 translate-middle"
+                            style="top:46%; left:54%"></div>
+                        <div class="card text-center text-lg-start shadow">
+                        <h5 class="card-header py-3">Kurs podstawowy B</h5>
+                        <div class="card-body">
+                            <p class="card-text">With supporting text below as a natural lead-in to
+                                additional content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="text-center py-5">
