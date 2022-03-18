@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "aos": "^2.3.4"
-  }
+  },
+  "name": "dimax_page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustSmile52/Dimax_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustSmile52/Dimax_page/issues"
+  },
+  "homepage": "https://github.com/JustSmile52/Dimax_page#readme",
+  "description": ""
 }
