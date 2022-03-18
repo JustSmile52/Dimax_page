@@ -36,4 +36,5 @@ section{
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+  border-radius: 90px;
 }
