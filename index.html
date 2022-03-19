@@ -32,16 +32,25 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-5">
-                    <li class="nav-item active">
+                <ul class="navbar-nav ms-5 ">
+                    <li class="nav-item active px-2">
                         <a href="#" class="nav-link active px-2">
                             Strona Główna
                         </a>
+                        
+                    </li>
+                    <li>
+                        <div class="shadow-lg" style="border-left: 1px solid gray;
+                        height: 100%; width: 1px;"></div>
                     </li>
                     <li class="nav-item px-2">
                         <a href="#" class="nav-link">
                             O Nas
                         </a>
+                    </li>
+                     <li>
+                        <div class="shadow-lg" style="border-left: 1px solid gray;
+                        height: 100%; width: 1px;"></div>
                     </li>
                     <li class="nav-item dropdown px-2">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
@@ -57,7 +66,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                     <li>
+                        <div class="shadow-lg" style="border-left: 1px solid gray;
+                        height: 100%; width: 1px;"></div>
+                    </li>
+                    <li class="nav-item px-2">
                         <a href="#" class="nav-link  px-2">
                             Kontakt
                         </a>
@@ -65,8 +78,8 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <b>Zapisz Się</b>
+                        <a href="#" class="">
+                            <h1><span class="badge badge-pill badge-primary">Zapisy</span></h1>
                         </a>
                     </li>
                 </ul>
@@ -179,21 +192,21 @@
                     <button
                         class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
                         id="sectionButton1" style="background-color:#efefef" onclick="changeSectionPros('niezawodnie')">
-                        <h6 class="display-6 px-5 ">Niezawodnie</h6>
+                        <h6 class="display-6 px-5 ">Lorem</h6>
                     </button>
                     <hr>
 
                     <button
                         class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded  border border-primary"
                         id="sectionButton2" onclick="changeSectionPros('szybko')">
-                        <h6 class="display-6 px-5">Szybko</h6>
+                        <h6 class="display-6 px-5">Ipsum</h6>
                     </button>
                     <hr>
 
                     <button
                         class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
                         id="sectionButton3" onclick="changeSectionPros('zajebiscie')">
-                        <h6 class="display-6 px-5">Zajebiście</h6>
+                        <h6 class="display-6 px-5">Dolor</h6>
                     </button>
                     <hr class="d-block d-sm-block d-md-none" />
                 </div>
@@ -303,21 +316,21 @@
             let title, content, photo;
             if (x == "niezawodnie") {
                 title = "Jesteśmy niezawodni";
-                content = "Lorem Ipsum is simply dummy s been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend neque eget mi finibus elementum. Maecenas dictum efficitur turpis, commodo volutpat nulla malesuada eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut egestas erat quis blandit consequat. Duis non libero arcu"
                 photo = "https://picsum.photos/id/0/600/400"
                 document.getElementById('sectionButton1').style.backgroundColor = "#efefef"
                 document.getElementById('sectionButton3').style.backgroundColor = "#bce4ec"
                 document.getElementById('sectionButton2').style.backgroundColor = "#bce4ec"
             } else if (x == "szybko") {
                 title = "Jesteśmy szybcy i wściekli";
-                content = "Lorem Ipsum is Lorem Ipsum Madafaka simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummys been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy text ever since the 1500s"
+                content = "Lorem Ipsum is Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummys been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy text ever since the 1500s"
                 photo = "https://picsum.photos/id/1/600/400"
                 document.getElementById('sectionButton1').style.backgroundColor = "#bce4ec"
                 document.getElementById('sectionButton2').style.backgroundColor = "#efefef"
                 document.getElementById('sectionButton3').style.backgroundColor = "#bce4ec"
             } else {
                 title = "Nasze bloki są zajebiste";
-                content = "Mieszkam na drugim jak Onar, na winklu pali się szlugi zos been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy bacz, widok z okna na kościół, pod blokiem buja się paru gościów, mój sąsiad to pies jebał go"
+                content = " Duis ac dolor lacus. Maecenas lobortis sit amet nisi vel fermentum. Aliquam risus metus, vestibulum vitae accumsan non, condimentum vitae lacus. Ut fermentum eros quis ligula volutpat, nec aliquet justo fringilla. Suspendisse potenti. Proin accumsan pulvinar viverra. Duis urna metus, in"
                 photo = "https://picsum.photos/id/2/600/400"
                 document.getElementById('sectionButton1').style.backgroundColor = "#bce4ec"
                 document.getElementById('sectionButton2').style.backgroundColor = "#bce4ec"
