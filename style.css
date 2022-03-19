@@ -1,15 +1,37 @@
-body {
-  padding-top: 70px;
+
+body{
+  padding-top:80px;
+  overflow-x: hidden;
+
 }
 
-.carousel-item {
-  max-height: 80vh;
-  min-height: 20vh;
-  width: 100%;
-  position: relative;
-  background-position: center;
-  text-align: center;
+body,
+p {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+
 }
+.carousel-item {
+  height: 700px;
+  color: #fff;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  .carousel .carousel-item {
+    height: 550px;
+  }
+}
+
+@media (max-width: 575px) {
+  .carousel .carousel-item {
+    height: 450px;
+  }
+}
+
+
 .w-100 {
   max-width: 100% !important;
 }
@@ -37,4 +59,8 @@ section{
 	cursor: pointer;
 	outline: inherit;
   border-radius: 90px;
+}
+.section-padding {
+  margin: 100px 0;
+  position: relative;
 }
