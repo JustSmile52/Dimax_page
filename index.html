@@ -310,7 +310,10 @@
 
 
         function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });   
+            console.log(document.body.clientHeight)
+            console.log(document.body.scrollHeight)
+            console.log(document.body.clientTop)  
         }
         function changeSectionPros(x) {
             let title, content, photo;
@@ -339,6 +342,11 @@
             document.getElementById('sectionProsTitle').innerText = title
             document.getElementById('sectionProsContent').innerText = content
             document.getElementById('sectionProsPhoto').src = photo
+        }
+        window.onscroll = function() {
+            console.log(document.body.clientHeight)
+            console.log(document.body.scrollHeight)
+            console.log(document.body.scrollTop) 
         }
     </script>
 </body>
