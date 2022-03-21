@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style_layout.css">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> -->
     <script src="node_modules/aos/dist/aos.js"></script>
 </head>
 
@@ -26,15 +26,16 @@
                     alt="kotel" width="50">
             </a>
 
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler text-white " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-5 ">
-                    <li class="nav-item active px-2">
-                        <a href="#" class="nav-link active px-2">
+                    <li class="nav-item active px-2 hover-underline-animation">
+                        <a href="#" class="nav-link active">
                             Strona Główna
                         </a>
 
@@ -43,7 +44,7 @@
                         <div class="shadow-lg" style="border-left: 1px solid gray;
                         height: 100%; width: 1px;"></div>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item px-2 hover-underline-animation">
                         <a href="#" class="nav-link">
                             O Nas
                         </a>
@@ -52,9 +53,9 @@
                         <div class="shadow-lg" style="border-left: 1px solid gray;
                         height: 100%; width: 1px;"></div>
                     </li>
-                    <li class="nav-item dropdown px-2">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown px-2 hover-underline-animation">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Oferta
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,17 +71,15 @@
                         <div class="shadow-lg" style="border-left: 1px solid gray;
                         height: 100%; width: 1px;"></div>
                     </li>
-                    <li class="nav-item px-2">
-                        <a href="#" class="nav-link  px-2">
+                    <li class="nav-item px-2  hover-underline-animation">
+                        <a href="#" class="nav-link">
                             Kontakt
                         </a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#" class="">
-                            <h1><span class="badge badge-pill badge-primary">Zapisy</span></h1>
-                        </a>
+                <ul class="navbar-nav ms-5 ms-md-auto">
+                    <li class="nav-item align-content-center">
+                        <h2><a href="#" class="badge badge-pill badge-primary py-2">Zapisz się</a></h2>
                     </li>
                 </ul>
             </div>
@@ -88,7 +87,7 @@
     </nav>
 
     <!-- Slider -->
-    <section class="mb-0 container-fluid px-0 position-relative">
+    <section class="mb-0 container-fluid px-0">
         <div id="demo" class="carousel slide " data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
@@ -102,7 +101,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" style="background-image:url(https://picsum.photos/id/1001/900/400)">
                     <div class="carousel-caption">
-                        <h2>First slide label</h2>
+                        <h1>First slide label</h1>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
@@ -110,7 +109,7 @@
                     <!-- <img src="https://picsum.photos/id/1002/900/400" alt="Los Angeles"
                         class="d-block col-md-auto w-100 align-top" style="width:100%;filter:blur(5px)"> -->
                     <div class="carousel-caption">
-                        <h2>First slide label</h2>
+                        <h1>First slide label</h1>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
@@ -118,7 +117,7 @@
                     <!-- <img src="https://picsum.photos/id/1003/900/400" alt="Los Angeles"
                         class="d-block col-md-auto w-100 align-top" style="width:100%;filter:blur(5px)"> -->
                     <div class="carousel-caption">
-                        <h2>First slide label</h2>
+                        <h1>First slide label</h1>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
@@ -145,9 +144,8 @@
                 </div>
                 <div class="col-12 col-md-5 d-block align-items-center text-center">
 
-                    <button type="button" class="btn-light btn rounded-pill ">
-                        <h3>Zapisz się już teraz</h3>
-                    </button>
+                    <h1><a href="#" class="badge badge-pill badge-light py-3">Zapisz się</a></h1>
+
                 </div>
             </div>
             <hr />
@@ -155,73 +153,69 @@
     </section>
 
     <!-- O nas -->
-    <section class="section-padding" class="row align-items-center justify-content-between p-2 " data-aos="fade-left"
+    <section class="align-items-center justify-content-between " data-aos=" fade-left"
         data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-7">
-                    <div class="position-relative">
-                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary  translate-middle"
-                            style="top:40%; left:45%; z-index: -1; width: 80%; height: 94%;"></div>
-                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary  translate-middle"
-                            style="top:38%; left:53%;z-index: -1 ; width: 80%; height: 88%;"></div>
-                        <img src="https://picsum.photos/id/1006/600/400" alt="Los Angeles"
-                            class="d-block mx-auto mx-lg-0 rounded mb-5 shadow" style="width: 80%;">
-
-
-                    </div>
-
-
-                </div>
-                <div class=" col-lg-4 d-block text-center text-lg-start">
+            <div class="row align-items-center justify-content-between">
+                <div class=" col-lg-4 d-block text-center text-lg-start mb-5 border border-5 border-primary">
                     <h2 class="display-3">O nas</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s</p>
                 </div>
+                <div class="col-lg-7">
+                    <div class="position-relative">
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-dark  translate-middle"
+                            style="top:40%; left:45%; z-index: -1; width: 80%; height: 94%;"></div>
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-dark  translate-middle"
+                            style="top:38%; left:53%;z-index: -1 ; width: 80%; height: 88%;"></div>
+                        <img src="https://picsum.photos/id/1006/600/400" alt="Los Angeles"
+                            class="d-block mx-auto mx-lg-0 rounded  shadow" style="width: 80%;">
+                    </div>
+                </div>
+
             </div>
         </div>
 
     </section>
     <!-- Zalety -->
-    <section class="bg-secondary p-3 shadow-lg section-padding" data-aos="fade-right"
+    <section class="bg-primary p-3 shadow-lg section-padding" data-aos="fade-right"
         data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
-        <div class="container  border border-primary shadow bg-primary" style="border-radius: 15px;">
+        <div class="container">
             <hr />
-            <div class="row align-items-center ">
-                <div class="col-md-4 d-block flex-row align-items-center ">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-block flex-row align-items-center h3 display-5 mx-auto">
                     <button
                         class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
                         id="sectionButton1" onclick="changeSectionPros('niezawodnie')">
-                        <h6 class="display-6 px-5 ">Niezawodnie</h6>
-                        =======
-                        class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
-                        id="sectionButton1" style="background-color:#efefef" onclick="changeSectionPros('niezawodnie')">
-                        <h6 class="display-6 px-5 ">Lorem</h6>
-                        >>>>>>> 519ce1a178f15d16b0f3d4fc86e45136c54ac3dc
+                        Niezawodnie
                     </button>
                     <hr>
 
                     <button
-                        class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded  border border-primary"
+                        class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
                         id="sectionButton2" onclick="changeSectionPros('szybko')">
-                        <h6 class="display-6 px-5">Ipsum</h6>
+                        Ipsum
                     </button>
                     <hr>
 
                     <button
                         class="btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
                         id="sectionButton3" onclick="changeSectionPros('zajebiscie')">
-                        <h6 class="display-6 px-5">Dolor</h6>
+                        Dolor
                     </button>
                     <hr class="d-block d-sm-block d-md-none" />
                 </div>
-                <div class=" col-md-7 d-block mx-auto text-center">
-                    <h6 class="display-6" id="sectionProsTitle">Jesteśmy niezawodni</h6>
-                    <p id="sectionProsContent">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum hasLorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has
-                        beens
-                        the industry's standard dummy text ever since the 1500s</p>
+                <div class=" col-md-7 d-block mx-auto text-center p-5">
+                    <div class=" border border-5 border-primary mb-5 p-2">
+                        <h2 class=" display-6" id="sectionProsTitle">Jesteśmy niezawodni</h2>
+                        <p id="sectionProsContent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum hasLorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry. Lorem Ipsum has
+                            beens
+                            the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+
                     <img src="https://picsum.photos/id/0/600/400" alt="Los Angeles" style="width: 80%;"
                         class="d-block mx-auto rounded mb-5" id="sectionProsPhoto">
                 </div>
@@ -235,18 +229,18 @@
     <section class="section-padding">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-2">Oferty</h2>
+                <h1 class="display-2">Oferty</h1>
             </div>
             <div class="row align-items-center justify-content-between p-2 " data-aos="fade-left"
                 data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
                 <div class="col-lg-3 col-md-4 p-2">
                     <div class=" position-relative ">
-                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary w-100 h-100 translate-middle"
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-dark w-100 h-100 translate-middle"
                             style="top:40%; left:60%"></div>
-                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary w-100 h-100 translate-middle"
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-dark w-100 h-100 translate-middle"
                             style="top:46%; left:54%"></div>
                         <div class="card text-center text-lg-start shadow">
-                            <h5 class="card-header py-3 bg-primary">Kurs podstawowy B</h5>
+                            <h2 class="card-header py-3 bg-primary fs-3">Kurs podstawowy B</h2>
                             <div class="card-body">
                                 <p class="card-text">With supporting text below as a natural lead-in to
                                     additional content.</p>
@@ -258,12 +252,12 @@
                 </div>
                 <div class="col-lg-3 col-md-4 p-2">
                     <div class=" position-relative ">
-                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary w-100 h-100 translate-middle"
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-dark w-100 h-100 translate-middle"
                             style="top:40%; left:60%"></div>
-                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary w-100 h-100 translate-middle"
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-dark w-100 h-100 translate-middle"
                             style="top:46%; left:54%"></div>
                         <div class="card text-center text-lg-start shadow">
-                            <h5 class="card-header py-3 bg-primary">Kurs podstawowy B</h5>
+                            <h2 class="card-header py-3 bg-primary  fs-3">Kurs podstawowy B</h2>
                             <div class="card-body">
                                 <p class="card-text">With supporting text below as a natural lead-in to
                                     additional content.</p>
@@ -275,12 +269,12 @@
                 </div>
                 <div class="col-lg-3 col-md-4 p-2">
                     <div class=" position-relative ">
-                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary w-100 h-100 translate-middle"
+                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-dark w-100 h-100 translate-middle"
                             style="top:40%; left:60%"></div>
-                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary w-100 h-100 translate-middle"
+                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-dark w-100 h-100 translate-middle"
                             style="top:46%; left:54%"></div>
                         <div class="card text-center text-lg-start shadow">
-                            <h5 class="card-header py-3 bg-primary">Kurs podstawowy B</h5>
+                            <h2 class="card-header py-3 bg-primary  fs-3">Kurs podstawowy B</h2>
                             <div class="card-body">
                                 <p class="card-text">With supporting text below as a natural lead-in to
                                     additional content.</p>
@@ -291,9 +285,9 @@
 
                 </div>
             </div>
-            <div class="text-center py-5">
-                <button type="button" class="btn-secondary btn">
-                    <h5 class="display-5">Zobacz więcej</h5>
+            <div class="d-block text-center py-5 ">
+                <button class="btn-primary btn btn-lg">
+                    <span class="h3 display-5 text-white">Zobacz więcej</span>
                 </button>
             </div>
         </div>
@@ -303,22 +297,21 @@
     <footer class="container-fluid bg-dark align-" style="height:200px">
         es
     </footer>
-    <div class="container fixed-bottom d-flex">
-        <div class=" ms-auto py-5">
-            <button onclick="scrollToTop()" class="btn btn-outline-primary" style="border-radius: 90px;"><i
-                    class="fa-solid fa-angle-up"></i></button>
-        </div>
-    </div>
+
+    <!-- Button ScrollToUp -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn btn-dark text-light " data-aos="zoom-in-up"
+        data-aos-duration="2500" data-aos-delay="150" style="border-radius: 90px;"><i class="fa-solid fa-angle-up"></i>
+    </button>
 
     <script>
         AOS.init();
 
 
         function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });   
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             console.log(document.body.clientHeight)
             console.log(document.body.scrollHeight)
-            console.log(document.body.clientTop)  
+            console.log(document.body.clientTop)
         }
         function changeSectionPros(x) {
             let title, content, photo;
@@ -348,11 +341,18 @@
             document.getElementById('sectionProsContent').innerText = content
             document.getElementById('sectionProsPhoto').src = photo
         }
-        window.onscroll = function() {
-            console.log(document.body.clientHeight)
-            console.log(document.body.scrollHeight)
-            console.log(document.body.scrollTop) 
+        let btn = document.getElementById('scrollToTopBtn')
+        window.onscroll = function () {
+            console.log(scrollY)
+            if (window.scrollY > 10) {
+                btn.style.visibility = "visible";
+
+            } else {
+                btn.style.visibility = "hidden";
+            }
         }
+
+
     </script>
 </body>
 

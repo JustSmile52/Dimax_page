@@ -64,3 +64,55 @@ section{
   margin: 100px 0;
   position: relative;
 }
+
+
+#scrollToTopBtn{
+  visibility: hidden;
+  position: fixed; 
+  bottom: 3rem; 
+}
+@media (min-width: 576px) {
+  #scrollToTopBtn{
+    right: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  #scrollToTopBtn{
+    right: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  #scrollToTopBtn{
+    right: 50px;
+  }
+}
+@media (max-width: 576px) {
+  #scrollToTopBtn{
+    right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #63b2e3;
+  }
+  .hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -18px;
+  left: 0;
+  background-color: #63b2e3;
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+  }
+  .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+  }
+
+}
