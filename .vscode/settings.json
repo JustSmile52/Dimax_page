@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "Dimax"
+    ],
+    "cSpell.enableFiletypes": [
+        "!c",
+        "fsharp",
+        "graphql"
+    ]
+}
