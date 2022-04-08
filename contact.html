@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    siema
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -64,19 +53,10 @@
                         <div class="shadow-lg" style="border-left: 1px solid gray;
                         height: 100%; width: 1px;"></div>
                     </li>
-                    <li class="nav-item dropdown px-2 hover-underline-animation">
-                        <a href="#" class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                   <li class="nav-item px-2 hover-underline-animation">
+                        <a href="./aboutus.html" class="nav-link">
                             Oferta
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a href="#" class="dropdown-item">Kategoria A</a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Kategoria B</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <div class="shadow-lg" style="border-left: 1px solid gray;
@@ -96,13 +76,31 @@
             </div>
         </div>
     </nav>
-    <section class="container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8792049099125!2d19.906121715935036!3d50.1072679199137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a17715ada53%3A0x24797abc22b154dc!2zS2Fjem9yw7N3a2EsIEtyYWvDs3c!5e0!3m2!1spl!2spl!4v1648233042962!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <section class="container-fluid">
+        <hr>
+        <div class=" d-flex flex-row">
+            
+        <iframe class="border-primary p-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.3034501424827!2d19.975027515918196!3d50.024409525851645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47164359c7f19395%3A0xf115ffd8c2b7b8c!2zWmVzcMOzxYIgU3prw7PFgiBFbGVrdHJ5Y3pueWNoIG5yIDE!5e0!3m2!1spl!2spl!4v1649359623465!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div>
+        <p>siema</p>
+        <hr>
+        <p>siema</p>
+        <hr>
+        <p>siema</p>
+        <hr>
+        <p>siema</p>
+        <hr>
+        <p>siema</p>
+        <hr>
+        <p>siema</p>
+        </div>
+        
+        </div>
+        
     </section>
     <!-- Footer -->
     <footer class="container-fluid bg-dark align-" style="height:200px">
-        es
     </footer>
 
     <!-- Button ScrollToUp -->
@@ -119,34 +117,6 @@
             console.log(document.body.clientHeight)
             console.log(document.body.scrollHeight)
             console.log(document.body.clientTop)
-        }
-        function changeSectionPros(x) {
-            let title, content, photo;
-            if (x == "niezawodnie") {
-                title = "Jesteśmy niezawodni";
-                content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend neque eget mi finibus elementum. Maecenas dictum efficitur turpis, commodo volutpat nulla malesuada eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut egestas erat quis blandit consequat. Duis non libero arcu"
-                photo = "https://picsum.photos/id/0/600/400"
-                document.getElementById('sectionButton1').style.backgroundColor = "#efefef"
-                document.getElementById('sectionButton3').style.backgroundColor = "#bce4ec"
-                document.getElementById('sectionButton2').style.backgroundColor = "#bce4ec"
-            } else if (x == "szybko") {
-                title = "Jesteśmy szybcy i wściekli";
-                content = "Lorem Ipsum is Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummys been the industry's standard dummy s been the industry's standard dummy s been the industry's standard dummy text ever since the 1500s"
-                photo = "https://picsum.photos/id/1/600/400"
-                document.getElementById('sectionButton1').style.backgroundColor = "#bce4ec"
-                document.getElementById('sectionButton2').style.backgroundColor = "#efefef"
-                document.getElementById('sectionButton3').style.backgroundColor = "#bce4ec"
-            } else {
-                title = "Nasze bloki są zajebiste";
-                content = " Duis ac dolor lacus. Maecenas lobortis sit amet nisi vel fermentum. Aliquam risus metus, vestibulum vitae accumsan non, condimentum vitae lacus. Ut fermentum eros quis ligula volutpat, nec aliquet justo fringilla. Suspendisse potenti. Proin accumsan pulvinar viverra. Duis urna metus, in"
-                photo = "https://picsum.photos/id/2/600/400"
-                document.getElementById('sectionButton1').style.backgroundColor = "#bce4ec"
-                document.getElementById('sectionButton2').style.backgroundColor = "#bce4ec"
-                document.getElementById('sectionButton3').style.backgroundColor = "#efefef"
-            }
-            document.getElementById('sectionProsTitle').innerText = title
-            document.getElementById('sectionProsContent').innerText = content
-            document.getElementById('sectionProsPhoto').src = photo
         }
         let btn = document.getElementById('scrollToTopBtn')
         window.onscroll = function () {
