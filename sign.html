@@ -99,20 +99,23 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Numer telefonu</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="message" class="form-control" required>
                 </div>
                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Imie</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="message2" class="form-control" required>
                 </div>
                  <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nazwisko</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="message3" class="form-control" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Kiedy chciałbyś/chciałabyś rozpocząć kurs</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="message4" class="form-control" required>
                 </div>
+                <!-- <input type="hidden" name="_next" value="localhost/dimax"> -->
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_captcha" value="false">
                 <button type="submit" class="btn container-fluid btn-primary">Submit</button>
             </form>
         </div>
