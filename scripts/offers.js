@@ -14,11 +14,12 @@ async function getOffersData() {
 //      Change active category element
     document.querySelectorAll('.pricing-list-elem').forEach((item, index) => {
         item.addEventListener('click', event => {
-            event.target.classList.add("active")
+            event.currentTarget.classList.add("active")
             document.querySelectorAll('.pricing-list-elem').forEach(item => {
-                if(item!=event.target ) item.classList.remove("active")
+                if(item!=event.currentTarget ) item.classList.remove("active")
             })
             active = index
+            console.log(event.currentTarget)
 
 //      Change table's data after change active category element
             changeTable(OffersData, Info)

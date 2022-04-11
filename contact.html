@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> -->
+    <script defer src="/scripts/index.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
 </head>
 
@@ -58,7 +59,7 @@
                 </ul>
                 <ul class="navbar-nav ms-5 ms-md-auto">
                     <li class="nav-item align-content-center">
-                        <h2><a href="./writeus.html" class="badge badge-pill badge-primary py-2">Napisz do nas</a></h2>
+                        <h4><a href="./writeus.html" class="badge badge-pill badge-primary py-2">Napisz do nas</a></h4>
                     </li>
                 </ul>
             </div>
@@ -93,33 +94,8 @@
     </footer>
 
     <!-- Button ScrollToUp -->
-    <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn btn-dark text-light " data-aos="zoom-in-up"
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn shadow btn-primary text-light " data-aos="zoom-in-up"
         data-aos-duration="2500" data-aos-delay="150" style="border-radius: 90px;"><i class="fa-solid fa-angle-up"></i>
     </button>
-
-    <script>
-        AOS.init();
-
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            console.log(document.body.clientHeight)
-            console.log(document.body.scrollHeight)
-            console.log(document.body.clientTop)
-        }
-        let btn = document.getElementById('scrollToTopBtn')
-        window.onscroll = function () {
-            console.log(scrollY)
-            if (window.scrollY > 10) {
-                btn.style.visibility = "visible";
-
-            } else {
-                btn.style.visibility = "hidden";
-            }
-        }
-
-
-    </script>
 </body>
-
 </html>
