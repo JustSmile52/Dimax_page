@@ -19,5 +19,7 @@
     "url": "https://github.com/JustSmile52/Dimax_page/issues"
   },
   "homepage": "https://github.com/JustSmile52/Dimax_page#readme",
-  "description": ""
+  "description": "",
+  "type": "module"
+
 }
