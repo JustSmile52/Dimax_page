@@ -1,15 +1,165 @@
-const OffersDataURL = "./data/offers.json"
+const OffersData = 
+        [
+        {
+            "name":"B",
+            "courses":[
+                {
+                    "name":"podstwawowy",
+                    "cost":"2500",
+                    "time": "8-9 tygodni"
+                },
+                {
+                    "name":"przyspieszony",
+                    "cost":"2500",
+                    "time": "6-7 tygodni"
+                },
+                {
+                    "name":"rozszerzony",
+                    "cost":"2800",
+                    "time": "35 godzin"
+                },
+                {
+                    "name":"",
+                    "cost":"3200",
+                    "time": "40 godzin"
+                }
+            ],
+            "description":[
+                "30 h zajęć teoretycznych",
+                "30 h zajęć praktycznych",
+                "Egzamin wewnętrzny teoretyczny i  praktyczny",
+                "Materiały szkoleniowe",
+                "Samochód Hyundai i20 taki jak na egzaminie"
+            ],
+            "other":[
+                {
+                    "name":"Jazdy doszkalające <br>dla kursantów naszego ośrodka",
+                    "cost":"90",
+                    "time": "1 godzina"
+                },
+                {
+                    "name":"Jazdy doszkalające <br>dla kursantów z innych ośrodków",
+                    "cost":"95",
+                    "time": "1 godzina"
+                },
+                {
+                    "name":"Podwyższenie z kat B1 na kat. B",
+                    "cost":"unkown",
+                    "time": ""
+                }
+            ]
+        },
+        {
+            "name":"A1 (od 16 roku życia)",
+            "courses":[
+                {
+                    "name":"podstwawowy",
+                    "cost":"2200"
+                },
+                {
+                    "name":"przyspieszony (15 dni)",
+                    "cost":"2400"
+                }
+            ],
+            "description":[
+                "30 h zajęć teoretycznych",
+                "20 h zajęć praktycznych",
+                "Egzamin wewnętrzny teoretyczny i  praktyczny",
+                "Motocykl YBR 125 CUSTOM taki jak na egzaminie"
+            ],
+            "other":[
+                {
+                    "name":"Jazdy doszkalające (1 godzina)",
+                    "cost":"110"
+                },
+                {
+                    "name":"Podwyższenie z kat. A1 na kat. A2",
+                    "cost":"Unkown"
+                },
+                {
+                    "name":"Podwyższenie z kat. A2 na kat. A",
+                    "cost":"Unkown"
+                }
+            ]
+        },
+        {
+            "name":"A2 (od 18 roku życia)",
+            "courses":[
+                {
+                    "name":"podstwawowy",
+                    "cost":"2400"
+                },
+                {
+                    "name":"przyspieszony (15 dni)",
+                    "cost":"2650"
+                }
+            ],
+            "description":[
+                "30 h zajęć teoretycznych",
+                "20 h zajęć praktycznych",
+                "Egzamin wewnętrzny teoretyczny i  praktyczny",
+                "Motocykl YAMAHA MT 07 35 KW"
+            ],
+            "other":[
+                {
+                    "name":"Jazdy doszkalające (1 godzina)",
+                    "cost":"110"
+                },
+                {
+                    "name":"Podwyższenie z kat. A1 na kat. A2",
+                    "cost":"Unkown"
+                },
+                {
+                    "name":"Podwyższenie z kat. A2 na kat. A",
+                    "cost":"Unkown"
+                }
+            ]
+        },
+        {
+            "name":"A (od 24 roku życia)",
+            "courses":[
+                {
+                    "name":"podstwawowy",
+                    "cost":"2400"
+                },
+                {
+                    "name":"przyspieszony (15 dni)",
+                    "cost":"2650"
+                }
+            ],
+            "description":[
+                "30 h zajęć teoretycznych",
+                "20 h zajęć praktycznych",
+                "Egzamin wewnętrzny teoretyczny i  praktyczny",
+                "Motocykl YAMAHA MT 07 powyżej 35 KW"
+            ],
+            "other":[
+                {
+                    "name":"Jazdy doszkalające (1 godzina)",
+                    "cost":"110"
+                },
+                {
+                    "name":"Podwyższenie z kat. A1 na kat. A2",
+                    "cost":"Unkown"
+                },
+                {
+                    "name":"Podwyższenie z kat. A2 na kat. A",
+                    "cost":"Unkown"
+                }
+            ]
+        }
+        ]
 
+const Info = [
+    "Zmiany terminu umówionych jazd można dokonać najpóźniej 24 godziny przed jazdą. Brak odwołania w wymaganym terminie lub nie przybycie na umówioną jazdę powoduje naliczenie dodatkowych kosztów 1h – 50zł",
+    "Płatność za godziny jazd lub wybrane pakiety należy dokonać w ustalonym terminie przelewem lub gotówką w biurze ośrodka."
+]
+
+    
 let active = 0
 
-getOffersData()
-
 //      Get DATA from OffersDataURL by fetch
-async function getOffersData() {
-    const response = await fetch(OffersDataURL);
-    const data = await response.json();
-    const OffersData = data.categories
-    const Info = data.info
+function getOffersData() {
 
 //      Change active category element
     document.querySelectorAll('.pricing-list-elem').forEach((item, index) => {
@@ -22,18 +172,18 @@ async function getOffersData() {
             console.log(event.currentTarget)
 
 //      Change table's data after change active category element
-            changeTable(OffersData, Info)
+            changeTable()
 
     })
   })
 
 //      Change table's data on load page
-    changeTable(OffersData, Info)
+    changeTable()
 
 }
 
 //      Function - Change table content
-let changeTable = (OffersData, Info)=> {
+let changeTable = ()=> {
 
 //      Change Header
     document.getElementById("categoryName").innerText = `Kategoria ${OffersData[active].name}`
@@ -99,3 +249,5 @@ let changeTable = (OffersData, Info)=> {
 //      Add categoryContent to div
     document.getElementById("categoryContent").innerHTML = categoryContent
 }
+
+getOffersData()

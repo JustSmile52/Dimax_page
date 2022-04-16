@@ -60,7 +60,7 @@
                 </ul>
                 <ul class="navbar-nav ms-5 ms-md-auto">
                     <li class="nav-item align-content-center">
-                        <h4><a href="./writeus.html" class="badge badge-pill badge-primary py-2">Napisz do nas</a></h4>
+                        <h4><a href="./writeus.html" class="badge badge-pill badge-primary py-2">Zapisz się</a></h4>
                     </li>
                 </ul>
             </div>
@@ -69,29 +69,44 @@
 
     <!-- Form -->
 
-    <section>
+    <section class="section-padding">
         <div class="container justify-content-center mb-3">
+            <h1 class="display-4 py-3">Zapisz się już teraz</h1>
             <form action="https://formsubmit.co/sbozek123@interia.pl" method="POST">
-                <div class="mb-3">
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label">Imie</label>
+                            <input type="text" name="Imie" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label">Nazwisko</label>
+                            <input type="text" name="Nazwisko" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="exampleInputEmail1" class="form-label">E-mail</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="mb-3">
+                <div class="form-group">
                     <label for="exampleInputPassword1" class="form-label">Numer telefonu</label>
                     <input type="text" name="Numer" class="form-control" required>
                 </div>
-               <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Imie</label>
-                    <input type="text" name="Imie" class="form-control" required>
-                </div>
-                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nazwisko</label>
-                    <input type="text" name="Nazwisko" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Kiedy chciałbyś/chciałabyś rozpocząć kurs</label>
-                    <input type="text" name="Termin" class="form-control" required>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Która kategoria Cię interesuje</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Kategoria B</option>
+                      <option>Kategoria A</option>
+                      <option>Kategoria A1</option>
+                      <option>Kategoria A2</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="form-label">Kiedy chciałbyś/chciałabyś rozpocząć kurs?</label>
+                    <input type="date" name="Termin" class="form-control" required>
                 </div>
                 <!-- <input type="hidden" name="_next" value="localhost/dimax"> -->
                 <input type="hidden" name="_subject" value="New submission!">
