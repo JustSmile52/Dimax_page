@@ -1,288 +1,269 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimax - Strona Główna</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style_layout.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-    <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/002c5cf07f.js" crossorigin="anonymous"></script>
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/changePros.js" defer></script>
-    <script src="node_modules/aos/dist/aos.js"></script>
-
-</head>
-
-<body>
-
-    <!-- Nazwigacja -->
-    <nav class="navbar shadow fixed-top navbar-expand-md navbar-light border-bottom bg-light">
-        <div class="container">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Szkoła jazdy Dimax w Krakowie oferuje ">
+      <meta name="keywords" content="szkoła jazdy, nauka jazdy, Dimax, Kraków, kategoria a, kategoria a1, kategoria a2, kategoria b, a, a1, a2, b, niskie ceny, kat a, kat b, kat a1, kat a2, jazdy, krk, osk, osrodek, niskie ceny, szkolenie, egzamin, teoretyczny, praktyczny, kurs, pierwsza pomoc, ofery">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dimax - Szkoła jazdy w Krakowie</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles/style_layout.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+      <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/002c5cf07f.js" crossorigin="anonymous"></script>
+      <script src="scripts/index.js" defer></script>
+      <script src="scripts/changePros.js" defer></script>
+      <script src="node_modules/aos/dist/aos.js"></script>
+   </head>
+   <body>
+      <!-- Nazwigacja -->
+      <nav class="navbar shadow fixed-top navbar-expand-md navbar-light border-bottom bg-light">
+         <div class="container">
             <a href="#" class="navbar-brand mb-0 h1">
-                <img src="./assets/kotlogo.png" class="d-line-block rounded float-start align-top img-fluid "
-                    alt="kotel" width="50">
+            <img src="./assets/kotlogo.png" class="d-line-block rounded float-start align-top img-fluid "
+               alt="kotel" width="50">
             </a>
-
             <button class="navbar-toggler text-white " type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+               aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-5 ">
-                    <li class="nav-item active px-2 hover-underline-animation">
-                        <a href="./index.html" class="nav-link active">
-                            Strona Główna
-                        </a>
-
-                    </li>
-                    <li class="nav-item px-2 hover-underline-animation">
-                        <a href="./aboutus.html" class="nav-link">
-                            O Nas
-                        </a>
-                    </li>
-                    <li class="nav-item px-2 hover-underline-animation">
-                        <a href="./offers.html" class="nav-link">
-                            Oferta
-                        </a>
-                    </li>
-                    <li class="nav-item px-2  hover-underline-animation">
-                        <a href="./contact.html" class="nav-link">
-                            Kontakt
-                        </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-5 ms-md-auto">
-                    <li class="nav-item align-content-center">
-                        <h4><a href="./writeus.html" class="badge badge-pill badge-primary py-2">Zapisz się</a></h4>
-                    </li>
-                </ul>
+               <ul class="navbar-nav ms-5 ">
+                  <li class="nav-item active px-2 hover-underline-animation">
+                     <a href="./index.html" class="nav-link active">
+                     Strona Główna
+                     </a>
+                  </li>
+                  <li class="nav-item px-2 hover-underline-animation">
+                     <a href="./aboutus.html" class="nav-link">
+                     O Nas
+                     </a>
+                  </li>
+                  <li class="nav-item px-2 hover-underline-animation">
+                     <a href="./offers.html" class="nav-link">
+                     Oferta
+                     </a>
+                  </li>
+                  <li class="nav-item px-2  hover-underline-animation">
+                     <a href="./contact.html" class="nav-link">
+                     Kontakt
+                     </a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-5 ms-md-auto">
+                  <li class="nav-item align-content-center">
+                    <a href="./writeus.html" class="badge badge-pill badge-primary py-2 fs-5">Zapisz się</a>
+                  </li>
+               </ul>
             </div>
-        </div>
-    </nav>
-
-    <!-- Slider -->
-    <section class="mb-0 container-fluid px-0">
-        <div id="demo" class="carousel slide " data-bs-ride="carousel">
-
+         </div>
+      </nav>
+      <!-- Slider -->
+      <section class="mb-0 container-fluid px-0">
+         <div id="demo" class="carousel slide " data-bs-ride="carousel">
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
-
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image:url(https://picsum.photos/id/1001/900/400)">
-                    <div class="carousel-caption">
-                        <h1 class="display-4">Witamy w ośrodku szkolenia kierowców Dimax w Krakowie!</h1>
-                        <h3
-                        class="text-light">Niższe ceny dla uczniów i studentów!</h3>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image:url(https://picsum.photos/id/1002/900/400)">
-                    <!-- <img src="https://picsum.photos/id/1002/900/400" alt="Los Angeles"
-                        class="d-block col-md-auto w-100 align-top" style="width:100%;filter:blur(5px)"> -->
-                    <div class="carousel-caption">
-                        <h1 class="display-4">Szkolenia i kursy na prawo jazdy kategorii <b>A</b> , <b>A1</b>, <b>A2</b> oraz <b>B</b></h1>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image:url(https://picsum.photos/id/1003/900/400)">
-                    <!-- <img src="https://picsum.photos/id/1003/900/400" alt="Los Angeles"
-                        class="d-block col-md-auto w-100 align-top" style="width:100%;filter:blur(5px)"> -->
-                    <div class="carousel-caption">
-                        <cite class="display-4 text-dark">„Nauczycielem wszystkiego jest praktyka"</cite>
-                        <p>~Juliusz Cezar</p>
-                    </div>
-                </div>
+               <div class="carousel-item active" style="background-image:url(https://picsum.photos/id/1001/900/400)">
+                  <div class="carousel-caption">
+                     <h1 class="display-4">Witamy w ośrodku szkolenia kierowców Dimax w Krakowie!</h1>
+                     <h2
+                        class="text-light">Niższe ceny dla uczniów i studentów!</h2>
+                  </div>
+               </div>
+               <div class="carousel-item" style="background-image:url(https://picsum.photos/id/1002/900/400)">
+                  <!-- <img src="https://picsum.photos/id/1002/900/400" alt="Los Angeles"
+                     class="d-block col-md-auto w-100 align-top" style="width:100%;filter:blur(5px)"> -->
+                  <div class="carousel-caption">
+                     <h2 class="display-4">Szkolenia i kursy na prawo jazdy kategorii <b>A</b> , <b>A1</b>, <b>A2</b> oraz <b>B</b></h2>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="carousel-item" style="background-image:url(https://picsum.photos/id/1003/900/400)">
+                  <!-- <img src="https://picsum.photos/id/1003/900/400" alt="Los Angeles"
+                     class="d-block col-md-auto w-100 align-top" style="width:100%;filter:blur(5px)"> -->
+                  <div class="carousel-caption">
+                     <cite class="display-4 text-dark">„Nauczycielem wszystkiego jest praktyka"</cite>
+                     <p>~Juliusz Cezar</p>
+                  </div>
+               </div>
             </div>
-
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"></span>
             </button>
-        </div>
-
-    </section>
-
-    <!-- Zapisz się -->
-    <section class="bg-primary text-light">
-        <div class="container">
+         </div>
+      </section>
+      <!-- Zapisz się -->
+      <section class="bg-primary text-light">
+         <div class="container">
             <hr />
             <div class="d-flex row align-items-center ">
-                <div class="col-12 col-md-7 text-center">
-                    <h2>Chcesz dołączyć?</h2>
-                </div>
-                <div class="col-12 col-md-5 d-block align-items-center text-center">
-
-                   <a href="./writeus.html" class="badge badge-pill badge-light py-3 fs-5">Zapisz się</a>
-
-                </div>
+               <div class="col-12 col-md-7 text-center">
+                  <h2>Chcesz dołączyć?</h2>
+               </div>
+               <div class="col-12 col-md-5 d-block align-items-center text-center">
+                <h3 class="">  
+                <a href="./writeus.html" class="badge badge-pill badge-light px-5 py-3">Zapisz się</a>
+            </h3>   
+            </div>
             </div>
             <hr />
-        </div>
-    </section>
-
-    <!-- O nas -->
-    <section class="align-items-center justify-content-between " data-aos=" fade-left"
-        data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
-        <div class="container">
+         </div>
+      </section>
+      <!-- O nas -->
+      <section class="align-items-center justify-content-between " data-aos=" fade-left"
+         data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
+         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-lg-4 d-block text-center text-lg-start mb-5 border border-5 rounded  border-primary">
-                    <h2 class="display-4 py-3">O nas</h2>
-                    <p><strong>Ośrodek Dimax</strong> posiada <strong>30 letnią</strong> tradycję w kształceniu kierowców.
-                        Skuteczność naszych metod kształcenia została wielokrotnie potwierdzona w rankingach Małopolskiego Ośrodka Drogowego</p>               
-</div>
-                
-
-                <div class="col-lg-7">
-                    <div class="position-relative">
-                        <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary  translate-middle"
-                            style="top:40%; left:45%; z-index: -1; width: 80%; height: 94%;"></div>
-                        <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary  translate-middle"
-                            style="top:38%; left:53%;z-index: -1 ; width: 80%; height: 88%;"></div>
-                        <img src="https://picsum.photos/id/1006/600/400" alt="Los Angeles"
-                            class="d-block mx-auto mx-lg-0 rounded  shadow" style="width: 80%;">
-                    </div>
-                </div>
-
+               <div class="col-lg-4 d-block text-center text-lg-start mb-5 border border-5 rounded  border-primary">
+                  <h2 class="display-4 py-3">O nas</h2>
+                  <p><strong>Ośrodek Dimax</strong> posiada <strong>30 letnią</strong> tradycję w kształceniu kierowców.
+                     Skuteczność naszych metod kształcenia została wielokrotnie potwierdzona w rankingach Małopolskiego Ośrodka Drogowego
+                  </p>
+               </div>
+               <div class="col-lg-7">
+                  <div class="position-relative">
+                     <div class="position-absolute d-none d-lg-block d-xl-block rounded shadow bg-secondary  translate-middle"
+                        style="top:40%; left:45%; z-index: -1; width: 80%; height: 94%;"></div>
+                     <div class="position-absolute d-none d-md-block d-lg-none rounded shadow bg-secondary  translate-middle"
+                        style="top:38%; left:53%;z-index: -1 ; width: 80%; height: 88%;"></div>
+                     <img src="https://picsum.photos/id/1006/600/400" alt="Los Angeles"
+                        class="d-block mx-auto mx-lg-0 rounded  shadow" style="width: 80%;">
+                  </div>
+               </div>
             </div>
-        </div>
-
-    </section>
-    <!-- Zalety -->
-    <section class="bg-primary p-3 shadow-lg section-padding" data-aos="fade-right"
-        data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
-        <div class="container">
+         </div>
+      </section>
+      <!-- Zalety -->
+      <section class="bg-primary p-3 shadow-lg section-padding" data-aos="fade-right"
+         data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
+         <div class="container">
             <h2 class="text-center display-4 py-3">Cały cykl szkolenia obejmuje: </h2>
-
             <hr />
             <div class="row">
-                <div class="col-md-4 d-block flex-row h3 display-5 mx-auto">
-                    <button
-                        class="py-3 btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
-                        style="background-color: #efefef;"
-                        id="sectionButton1" onclick="changeSectionPros(0)">
-                        Część teoretyczną
-                    </button>
-                    <hr>
-
-                    <button
-                        class="py-3 btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
-                        id="sectionButton2" onclick="changeSectionPros(1)">
-                        Część praktyczną
-                    </button>
-                    <hr>
-
-                    <button
-                        class="py-3 btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
-                        id="sectionButton3" onclick="changeSectionPros(2)">
-                        Egzamin wewnętrzny
-                    </button>
-                    <hr class="d-block d-sm-block d-md-none" />
-                </div>
-                <div class=" col-md-7 d-block mx-auto p-5">
-                    <div class=" border border-5 border-light rounded mb-5 p-2" id="sectionProsContent">
-
-                    </div>
-
-                    <img src="https://picsum.photos/id/0/600/400" alt="Los Angeles" style="width: 80%;"
-                        class="d-block mx-auto rounded mb-5" id="sectionProsPhoto">
-                </div>
+               <div class="col-md-4 d-block flex-row h3 display-5 mx-auto">
+                <h3 class="text-black font-weight-light">  
+                <button
+                     class="py-3 btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
+                     style="background-color: #efefef;"
+                     id="sectionButton1" onclick="changeSectionPros(0)">
+                  Część teoretyczną
+                  </button>
+                </h3>
+                  <hr>
+                  <h3 class="text-black font-weight-light">
+                  <button
+                     class="py-3 btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
+                     id="sectionButton2" onclick="changeSectionPros(1)">
+                     Część praktyczną
+                  </button>
+                </h3>
+                  <hr>
+                  <h3 class="text-black font-weight-light">
+                  <button
+                     class="py-3 btn-blank shadow py-md-5 w-100 text-center text-lg-start rounded border border-primary"
+                     id="sectionButton3" onclick="changeSectionPros(2)">
+                     Egzamin wewnętrzny
+                  </button>
+                  </h3>
+                  <hr class="d-block d-sm-block d-md-none" />
+               </div>
+               <div class=" col-md-7 d-block mx-auto p-5">
+                  <div class=" border border-5 border-light rounded mb-5 p-2" id="sectionProsContent">
+                  </div>
+                  <img src="https://picsum.photos/id/0/600/400" alt="Los Angeles" style="width: 80%;"
+                     class="d-block mx-auto rounded mb-5" id="sectionProsPhoto">
+               </div>
             </div>
             <hr />
-        </div>
-
-    </section>
-
-    <!-- Oferty -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1 class="display-4">Oferty</h1>
+         </div>
+      </section>
+      <!-- Oferty -->
+      <section class="section-padding">
+         <div class="container">
+         <div class="text-center mb-5">
+            <h2 class="display-4">Oferty</h2>
+         </div>
+         <div class="row justify-content-center cardParent" data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
+            <div class="col-lg-3 col-6 d-flex align-items-stretch position-relative">
+               <div class="card text-center text-lg-start cardDiv">
+                  <h3 class="card-header py-3 bg-primary fs-4">kat. B</h3>
+                  <div class="card-body">
+                     <p class="card-text">Kurs <strong>Podstawowy</strong></p>
+                     <hr>
+                     <p class="card-text">Kurs <strong>Przyspieszony</strong></p>
+                     <hr>
+                     <p class="card-text">Kurs <strong>Rozszerzony</strong></p>
+                  </div>
+               </div>
             </div>
-            <div class="row justify-content-center cardParent" data-aos="fade-left"
-                data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="150">
-                
-                <div class="col-lg-3 col-6 d-flex align-items-stretch position-relative">
-                    <div class="card text-center text-lg-start cardDiv">
-
-                            <h3 class="card-header py-3 bg-primary fs-4">kat. B</h3>
-                            <div class="card-body">
-                                <p class="card-text">Kurs <strong>Podstawowy</strong></p>
-                                <hr>
-                                <p class="card-text">Kurs <strong>Przyspieszony</strong></p>
-                                <hr>
-                                <p class="card-text">Kurs <strong>Rozszerzony</strong></p>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6 d-flex align-items-stretch ">
-                        <div class="card text-center text-lg-start cardDiv">
-                            <h3 class="card-header py-3 bg-primary fs-4">kat. A</h3>
-                            <div class="card-body">
-                                <p class="card-text">Kategorie <strong>A, A1, A2</strong></p>
-                                <hr>
-                                <p class="card-text">Kurs <strong>Podstawowy</strong></p>
-                                <hr>
-                                <p class="card-text">Kurs <strong>Rozszerzony</strong></p>                            </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6 d-flex align-items-stretch ">
-                        <div class="card text-center text-lg-start cardDiv">
-                            <h3 class="card-header py-3 bg-primary fs-4">Jazdy doszkalające</h3>
-                            <div class="card-body">
-                                        <p class="card-text">Godziny jazd doszkalających w  <strong>atrakcyjnych cenach</strong></p>
-                                        <hr>
-                                        <p class="card-text">Godzinna jazda <strong>kat. B</strong></p>
-                                        <hr>
-                                        <p class="card-text">Godzinna jazda <strong>kat. A, A1, A2</strong></p>
-                                </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6 d-flex align-items-stretchcard ">
-                        <div class="card text-center text-lg-start cardDiv">
-                            <h3 class="card-header py-3 bg-primary  fs-4">Podwyższenie kategorii</h3>
-                            <div class="card-body">
-                                <p class="card-text">Oferujemy podniesienie posiadanych kategorii na wyższe</p>
-                                <hr>
-                                <p class="card-text">Podwyższenie <strong>kat. B1</strong> na <strong>kat. B</strong></p>
-                                <hr>
-                                <p class="card-text">Podwyższenie <strong>kat. A1</strong> na <strong>kat. A2</strong></p>
-                                <hr>
-                                <p class="card-text">Podwyższenie <strong>kat. A2</strong> na <strong>kat. A</strong></p>
-                            </div>
-                    </div>
-
+            <div class="col-lg-3 col-6 d-flex align-items-stretch ">
+               <div class="card text-center text-lg-start cardDiv">
+                  <h3 class="card-header py-3 bg-primary fs-4">kat. A</h3>
+                  <div class="card-body">
+                     <p class="card-text">Kategorie <strong>A, A1, A2</strong></p>
+                     <hr>
+                     <p class="card-text">Kurs <strong>Podstawowy</strong></p>
+                     <hr>
+                     <p class="card-text">Kurs <strong>Rozszerzony</strong></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-6 d-flex align-items-stretch ">
+               <div class="card text-center text-lg-start cardDiv">
+                  <h3 class="card-header py-3 bg-primary fs-4">Jazdy doszkalające</h3>
+                  <div class="card-body">
+                     <p class="card-text">Godziny jazd doszkalających w  <strong>atrakcyjnych cenach</strong></p>
+                     <hr>
+                     <p class="card-text">Godzinna jazda <strong>kat. B</strong></p>
+                     <hr>
+                     <p class="card-text">Godzinna jazda <strong>kat. A, A1, A2</strong></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-6 d-flex align-items-stretchcard ">
+               <div class="card text-center text-lg-start cardDiv">
+                  <h3 class="card-header py-3 bg-primary  fs-4">Podwyższenie kategorii</h3>
+                  <div class="card-body">
+                     <p class="card-text">Oferujemy podniesienie posiadanych kategorii na wyższe</p>
+                     <hr>
+                     <p class="card-text">Podwyższenie <strong>kat. B1</strong> na <strong>kat. B</strong></p>
+                     <hr>
+                     <p class="card-text">Podwyższenie <strong>kat. A1</strong> na <strong>kat. A2</strong></p>
+                     <hr>
+                     <p class="card-text">Podwyższenie <strong>kat. A2</strong> na <strong>kat. A</strong></p>
+                  </div>
+               </div>
             </div>
             <div class="d-block text-center py-5 ">
-                <a href="offers.html" class="btn-primary btn btn-lg">
-                    <spam class="h3 text-white">Zobacz więcej</spam>
-                </a>
+                  <a href="offers.html" class="btn-primary btn btn-lg h3 text-white">
+                  Zobacz więcej
+                  </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-dark align-" style="height:200px">
-        es
-    </footer>
-
-    <!-- Button ScrollToUp -->
-    <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn shadow btn-primary text-light " data-aos="zoom-in-up"
-        data-aos-duration="2500" data-aos-delay="150" style="border-radius: 90px;"><i class="fa-solid fa-angle-up"></i>
-    </button>
-</body>
+         </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="container-fluid bg-dark align-" style="height:200px">
+         es
+      </footer>
+      <!-- Button ScrollToUp -->
+      <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn shadow btn-primary text-light " data-aos="zoom-in-up"
+         data-aos-duration="2500" data-aos-delay="150" style="border-radius: 90px;"><i class="fa-solid fa-angle-up"></i>
+      </button>
+   </body>
 </html>

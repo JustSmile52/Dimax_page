@@ -1,128 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimax</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szkoła jazdy Dimax w Krakowie - Zapisz się na kurs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/002c5cf07f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style_layout.css">
-    <link rel="stylesheet"href="/styles/style.css">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <script
+      src="https://kit.fontawesome.com/002c5cf07f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style_layout.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> -->
     <script defer src="/scripts/offers.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Nazwigacja -->
-    <nav class="navbar shadow fixed-top navbar-expand-md navbar-light border-bottom bg-light">
-        <div class="container">
-            <a href="#" class="navbar-brand mb-0 h1">
-                <img src="./assets/kotlogo.png" class="d-line-block rounded float-start align-top img-fluid "
-                    alt="kotel" width="50">
-            </a>
+    <nav
+      class="navbar shadow fixed-top navbar-expand-md navbar-light border-bottom bg-light"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand mb-0 h1">
+          <img
+            src="./assets/kotlogo.png"
+            class="d-line-block rounded float-start align-top img-fluid"
+            alt="kotel"
+            width="50"
+          />
+        </a>
 
-            <button class="navbar-toggler text-white " type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-5 ">
-                    <li class="nav-item active px-2 hover-underline-animation">
-                        <a href="./index.html" class="nav-link active">
-                            Strona Główna
-                        </a>
-
-                    </li>
-                    <li class="nav-item px-2 hover-underline-animation">
-                        <a href="./aboutus.html" class="nav-link">
-                            O Nas
-                        </a>
-                    </li>
-                    <li class="nav-item px-2 hover-underline-animation">
-                        <a href="./offers.html" class="nav-link">
-                            Oferta
-                        </a>
-                    </li>
-                    <li class="nav-item px-2  hover-underline-animation">
-                        <a href="./contact.html" class="nav-link">
-                            Kontakt
-                        </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-5 ms-md-auto">
-                    <li class="nav-item align-content-center">
-                        <h4><a href="./writeus.html" class="badge badge-pill badge-primary py-2">Zapisz się</a></h4>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-5">
+            <li class="nav-item active px-2 hover-underline-animation">
+              <a href="./index.html" class="nav-link active"> Strona Główna </a>
+            </li>
+            <li class="nav-item px-2 hover-underline-animation">
+              <a href="./aboutus.html" class="nav-link"> O Nas </a>
+            </li>
+            <li class="nav-item px-2 hover-underline-animation">
+              <a href="./offers.html" class="nav-link"> Oferta </a>
+            </li>
+            <li class="nav-item px-2 hover-underline-animation">
+              <a href="./contact.html" class="nav-link"> Kontakt </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-5 ms-md-auto">
+            <li class="nav-item align-content-center">
+              <h4>
+                <a
+                  href="./writeus.html"
+                  class="badge badge-pill badge-primary py-2"
+                  >Zapisz się</a
+                >
+              </h4>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Form -->
 
     <section class="section-padding">
-        <div class="container justify-content-center mb-3">
-            <h1 class="display-4 py-3">Zapisz się już teraz</h1>
-            <form action="https://formsubmit.co/sbozek123@interia.pl" method="POST">
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="exampleInputPassword1" class="form-label">Imie</label>
-                            <input type="text" name="Imie" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="exampleInputPassword1" class="form-label">Nazwisko</label>
-                            <input type="text" name="Nazwisko" class="form-control" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1" class="form-label">Numer telefonu</label>
-                    <input type="text" name="Numer" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Która kategoria Cię interesuje</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Kategoria B</option>
-                      <option>Kategoria A</option>
-                      <option>Kategoria A1</option>
-                      <option>Kategoria A2</option>
-                    </select>
-                  </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1" class="form-label">Kiedy chciałbyś/chciałabyś rozpocząć kurs?</label>
-                    <input type="date" name="Termin" class="form-control" required>
-                </div>
-                <!-- <input type="hidden" name="_next" value="localhost/dimax"> -->
-                <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit" class="btn container-fluid btn-primary">Submit</button>
-            </form>
-        </div>
-
+      <div class="container justify-content-center mb-3">
+        <h1 class="display-4 py-3">Zapisz się już teraz</h1>
+        <form action="https://formsubmit.co/sbozek123@interia.pl" method="POST">
+          <div class="form-row">
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Imie</label
+                >
+                <input type="text" name="Imie" class="form-control" required />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Nazwisko</label
+                >
+                <input
+                  type="text"
+                  name="Nazwisko"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label"
+              >Numer telefonu</label
+            >
+            <input type="text" name="Numer" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"
+              >Która kategoria Cię interesuje</label
+            >
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Kategoria B</option>
+              <option>Kategoria A</option>
+              <option>Kategoria A1</option>
+              <option>Kategoria A2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label"
+              >Kiedy chciałbyś/chciałabyś rozpocząć kurs?</label
+            >
+            <input type="date" name="Termin" class="form-control" required />
+          </div>
+          <!-- <input type="hidden" name="_next" value="localhost/dimax"> -->
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit" class="btn container-fluid btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
     <!-- Footer -->
-    <footer class="container-fluid bg-dark fixed-bottom " style="height:200px">
-        es
+    <footer class="container-fluid bg-dark fixed-bottom" style="height: 200px">
+      es
     </footer>
-        <!-- Button ScrollToUp -->
-        <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn shadow btn-primary text-light " data-aos="zoom-in-up"
-        data-aos-duration="2500" data-aos-delay="150" style="border-radius: 90px;"><i class="fa-solid fa-angle-up"></i>
+    <!-- Button ScrollToUp -->
+    <button
+      onclick="scrollToTop()"
+      id="scrollToTopBtn"
+      class="btn shadow btn-primary text-light"
+      data-aos="zoom-in-up"
+      data-aos-duration="2500"
+      data-aos-delay="150"
+      style="border-radius: 90px"
+    >
+      <i class="fa-solid fa-angle-up"></i>
     </button>
-</body>
+  </body>
 </html>
